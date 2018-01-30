@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <title>Invoice Dashboard</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,900">
+    
+    <!--
+      Coded by Mark Eriksson (http://mark-eriksson.com)
+      Original design by Farhan Fauzan (https://dribbble.com/shots/4055827-Dashboard-Invoice/attachments/929646)
+    -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21727306-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-21727306-1');
+    </script>
+  </head>
+  
+  <body>
+    <div class="design-disclaimer" onclick="javascript:this.style.display='none';" style="box-sizing:border-box;top:0;left:0;position:fixed;width:100%;z-index:30;background-color: #eaeaea;text-align: center;padding: 16px;border-bottom: 2px solid #ccc;box-shadow: inset 0 -5px 11px -5px rgba(0,0,0,.3);font: 400 15px/1.6 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #424140;cursor: pointer;">
+      Please be aware this is not a live project. It is a copy of a website by <a href="https://dribbble.com/shots/4055827-Dashboard-Invoice/attachments/929646" target="_blank" style="color: #2b2a2a;text-decoration: underline;">Farhan Fauzan</a> from Dribbble.com<br />Click to hide.
+    </div>
+    <header>
+      <div class="container">
+        <div class="logo"><a href="index.html">Logo here</a></div>
+        <div class="user">
+          <input type="text" name="search" id="search" class="search">
+          <a href="index.html"><img src="img/bell.png" alt="Notifications"></a>
+          <a href="index.html"><img src="img/envelope.jpg" alt="Messages"><span class="new"></span></a>
+          <a href="index.html" class="user-portal">
+            <img src="img/me.png" alt="Mark Eriksson" class="user-pic">
+            <span class="user-name">Mark Eriksson <img src="img/caret.jpg" alt="Open menu"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <nav>
+      <div class="container">
+        <div class="nav-items">
+          <a href="index.html">Calendar</a>
+          <a href="index.html">Jobs</a>
+          <a href="index.html" class="active">Invoices</a>
+          <a href="index.html">Expenses</a>
+          <a href="index.html">Financials</a>
+        </div>
+        <div class="nav-cta">
+          <a href="index.html">Find a job</a>
+        </div>
+      </div>
+    </nav>
+    
+    <section>
+      <div class="container">
+        <h1>Hello, Mark!</h1>
+
+        <div class="overview-tiles">
+          <div class="tile tile-green">
+            <div class="tile-header">
+              <span class="big-number">4</span>
+              <img src="img/i-search.jpg" class="icon" alt="Unfilled Jobs">
+            </div>
+            <span class="tile-name">Unfilled Jobs</span>
+            <div class="progress">
+              <div class="progress-current" style="width: 33%;"></div>
+            </div>
+          </div>
+
+          <div class="tile tile-yellow">
+            <div class="tile-header">
+              <span class="big-number">65</span>
+              <img src="img/i-clock.jpg" class="icon" alt="Pending applications">
+            </div>
+            <span class="tile-name">Pending applications</span>
+            <div class="progress">
+              <div class="progress-current" style="width: 45%;"></div>
+            </div>
+          </div>
+
+          <div class="tile tile-blue">
+            <div class="tile-header">
+              <span class="big-number">25</span>
+              <img src="img/i-star.jpg" class="icon" alt="Outstanding invoices">
+            </div>
+            <span class="tile-name">Outstanding invoices</span>
+            <div class="progress">
+              <div class="progress-current" style="width: 72%;"></div>
+            </div>
+          </div>
+          
+          <div class="tile details">
+            <div class="tile-header">
+              <div class="price">
+                <span class="currency">£<span class="cost">79</span></span>
+                <span class="tile-name">Total Spend</span>
+              </div>
+              <div class="chart">
+                <img src="img/chart.jpg" alt="Total Spend">
+              </div>
+            </div>
+            <a href="index.html" class="cta">View details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th class="center"><input type="checkbox" name="selectAll" id="selectAll"></th>
+              <th>Number</th>
+              <th>Client</th>
+              <th>Amount</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="center"><input type="checkbox" name="invoice" id="00912"></td>
+              <td>00912</td>
+              <td>
+                <span class="initials-holder">FF</span>
+                Farhan Fauzan
+              </td>
+              <td>£1,000</td>
+              <td>27 March 2017</td>
+            </tr>
+            <tr>
+              <td class="center"><input type="checkbox" name="invoice" id="00913"></td>
+              <td>00913</td>
+              <td>
+                <span class="initials-holder">ME</span>
+                Mark Eriksson
+              </td>
+              <td>£6.66</td>
+              <td>29 March 2017</td>
+            </tr>
+            <tr>
+              <td class="center"><input type="checkbox" name="invoice" id="00914"></td>
+              <td>00914</td>
+              <td>
+                <span class="initials-holder">MM</span>
+                Marshall Mathers
+              </td>
+              <td>£313</td>
+              <td>30 March 2017</td>
+            </tr>
+            <tr>
+              <td class="center"><input type="checkbox" name="invoice" id="00915"></td>
+              <td>00915</td>
+              <td>
+                <span class="initials-holder">LG</span>
+                Liam Gallagher
+              </td>
+              <td>£620</td>
+              <td>2 April 2017</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+  
+  <script type="text/javascript">
+    document.getElementById('selectAll').addEventListener('change', function() {
+      var invoices = document.getElementsByName('invoice');
+      for (i=0;i<invoices.length;i++) {
+        document.getElementById(invoices[i].id).checked = !!this.checked;
+      }
+    });
+  </script>
+</html>

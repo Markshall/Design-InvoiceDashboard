@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.cf:before, .cf:after {
+	display: table;
+	content: " ";
+	font-size: 0;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.left { float: left; }
+.right { float: right; }
